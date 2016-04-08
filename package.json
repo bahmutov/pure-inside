@@ -56,6 +56,7 @@
     "test": "npm run unit && npm run demo-add",
     "unit": "mocha src/*-spec.js",
     "demo-add": "node index.js examples/add.js examples/add-out.js && node examples/add-out.js",
+    "demo-sub": "node index.js examples/sub.js examples/sub-out.js && node examples/sub-out.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "devDependencies": {
