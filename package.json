@@ -55,7 +55,7 @@
     "size": "t=\"$(npm pack .)\"; wc -c \"${t}\"; tar tvf \"${t}\"; rm \"${t}\";",
     "test": "npm run unit && npm run demo-add",
     "unit": "mocha src/*-spec.js",
-    "demo-add": "node index.js examples/add.js examples/add-out.js",
+    "demo-add": "node index.js examples/add.js examples/add-out.js && node examples/add-out.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "devDependencies": {

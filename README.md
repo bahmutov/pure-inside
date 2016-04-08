@@ -19,6 +19,8 @@ npm install
 npm run demo-add
 ```
 
+This should execute the rewritten code, but you can inspect the produced file `examples/add-out.js`
+
 [post]: https://glebbahmutov.com/blog/test-if-a-function-is-pure-revisited/
 
 ### Small print
