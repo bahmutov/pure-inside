@@ -1,8 +1,8 @@
 {
   "name": "pure-inside",
   "description": "Source code transformer that isolates insides of each function to confirm purity",
-  "version": "1.0.0",
   "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
+  "version": "0.0.0-semantic-release",
   "bugs": "https://github.com/bahmutov/pure-inside/issues",
   "config": {
     "pre-git": {
@@ -53,9 +53,10 @@
     "pretest": "npm run format && npm run lint",
     "secure": "nsp check",
     "size": "t=\"$(npm pack .)\"; wc -c \"${t}\"; tar tvf \"${t}\"; rm \"${t}\";",
-    "test": "npm run unit",
+    "test": "npm run unit && npm run demo-add",
     "unit": "mocha src/*-spec.js",
-    "demo-add": "node index.js examples/add.js examples/add-out.js"
+    "demo-add": "node index.js examples/add.js examples/add-out.js",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "devDependencies": {
     "ban-sensitive-files": "1.8.2",
@@ -66,7 +67,8 @@
     "nsp": "2.3.0",
     "pre-git": "3.8.3",
     "standard": "6.0.8",
-    "standard-format": "2.1.1"
+    "standard-format": "2.1.1",
+    "semantic-release": "^4.3.5"
   },
   "dependencies": {
     "falafel": "1.2.0"

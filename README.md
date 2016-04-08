@@ -8,6 +8,19 @@
 [![semantic-release][semantic-image] ][semantic-url]
 [![js-standard-style][standard-image]][standard-url]
 
+Read the blog post [Test if a function is pure revisited][post]
+
+To run the example:
+
+```sh
+git clone git@github.com:bahmutov/pure-inside.git
+cd pure-inside
+npm install
+npm run demo-add
+```
+
+[post]: https://glebbahmutov.com/blog/test-if-a-function-is-pure-revisited/
+
 ### Small print
 
 Author: Gleb Bahmutov &lt;gleb.bahmutov@gmail.com&gt; &copy; 2016
